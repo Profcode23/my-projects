@@ -7,6 +7,7 @@
 }
 a{
     text-decoration: none;
+    
 }
 .navbar{
     background-color: aqua;
@@ -34,42 +35,91 @@ a{
 
 }
 .content{
-    width: 80%;
+    width:90%;
     margin: auto;
     flex-wrap: wrap;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .services-cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    display: flex;
-    gap: 1.3rem;
-    width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0.8rem;
+    margin: 1em;
+    
 }
-.services-items{
-    max-width: 300px;
+.card{
     box-shadow: 5px 5px 10px rgb(91, 91, 91);
     border-radius: 10px;
     background-color: aliceblue;
-    
+    display: flex;
+    flex-direction: column;
+   
+ 
 }
-.services-items img{
+.card-1{
     width: 100%;
     height: 200px;
+    background-image: url(pakata-goh-EJMTKCZ00I0-unsplash\ \(1\).jpg);
+    background-size: cover;
     border-radius: 10px;
-    aspect-ratio: initial;
 }
-.services-items h4{
+.card-2{
+    width: 100%;
+    height: 200px;
+    background-image: url(marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+.card-3{
+    width: 100%;
+    height: 200px;
+    background-image: url(fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;  
+}
+.card h4{
     padding: 10px;
 }
-.services-items p{
+.card p{
     padding: 10px;
 }
-.services-items button{
+.card button{
     padding: 10px;
     border-radius: 20px;
     margin: 10px;
+}
+.socials-header{
+    text-align: center;
+    padding: 1em;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    
+}
+.social-items{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    /* min-width: 100px; */
+    
+}
+label{
+    cursor: pointer;
 }
 
