@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: roboto;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    box-shadow: 0px 5px 10px grey;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    
+}
+.right-nav{
+    display: flex;
+    gap: 1.1em;
+    
+}
+.right-nav button{
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+
+.welcome-section{
+    padding-top: 1rem;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    
+    width: 90%;
+    margin: auto;
+
+}
+.w-text{
+    padding: 1.4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 3em;
+}
+.site-reviews{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin: auto;
+    font-size: 1em;
+    padding-left: 1.4rem;
+   
+    
+    
+}
+.review-items{
+    display: flex;   
+}
+.review-items img a{
+    min-width: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: larger;
+    padding: 1.2rem;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 5px;
+    min-width: auto;
+}
+.order-form{
+    display: flex;
+    justify-content: center;
+    
+}
+.form-topbtn{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+    
+}
+.form-topbtn button{
+    font-size: medium;
+    padding: 5px 25px;
+    border-radius: 20px;
+}
+/* Media queries */
+@media screen and (max-width: 800px) {
+     .w-text p{
+        font-size: 80%;
+        
+     }
+}

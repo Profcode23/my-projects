@@ -119,6 +119,9 @@ a{
     /* min-width: 100px; */
     
 }
+@media screen {
+    
+}
 label{
     cursor: pointer;
 }
